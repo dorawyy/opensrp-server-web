@@ -7,7 +7,8 @@ on:
     paths-ignore:
       - 'docs/**'
     branches:
-      - master      
+      - master 
+      - v2*     
 
     # Publish `v1.2.3` tags as releases.
     tags:
