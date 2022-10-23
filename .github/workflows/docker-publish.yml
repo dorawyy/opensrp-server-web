@@ -8,7 +8,8 @@ on:
       - 'docs/**'
     branches:
       - master 
-      - v2*     
+      - v2*
+      - Trivy-CI-vuln-scan    #To be deleted
 
     # Publish `v1.2.3` tags as releases.
     tags:
