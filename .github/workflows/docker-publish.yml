@@ -130,7 +130,7 @@ jobs:
       - name: Run Trivy vulnerability scanner on Docker image - JSON (with Patches)
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: 'fs'
+          image-ref: ghcr.io/${{ steps.docker_meta.outputs.tags }}
           ignore-unfixed: true
           format: 'json'
           output: 'trivy-docker-fixable-results.json'
